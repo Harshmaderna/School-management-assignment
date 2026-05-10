@@ -1,5 +1,5 @@
 import express from "express";
-import { addSchool, listSchools } from "../schoolController.js";
+import { addSchool, listSchools } from "../controllers/schoolController.js";
 
 const router = express.Router();
 
@@ -7,4 +7,4 @@ const router = express.Router();
 router.post("/addSchool", addSchool);
 router.get("/listSchools", listSchools)
 
-export default router;
+export default router; 
